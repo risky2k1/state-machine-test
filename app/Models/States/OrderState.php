@@ -18,4 +18,13 @@ abstract class OrderState extends State
 {
     abstract public function color(): string;
 
+    public static function register(): array
+    {
+        return [
+            'pending' => Pending::class,
+            'approved' => Approved::class,
+            'declined' => Declined::class,
+            'done' => Done::class,
+        ];
+    }
 }
