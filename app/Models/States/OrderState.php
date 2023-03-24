@@ -10,6 +10,7 @@ use Spatie\ModelStates\Attributes\RegisterState;
 #[
     AllowTransition(Pending::class, Approved::class),
     AllowTransition(Pending::class, Declined::class),
+    AllowTransition(Done::class, Pending::class),
     AllowTransition(Approved::class, Declined::class),
     AllowTransition(Approved::class, Done::class),
     DefaultState(Pending::class),
