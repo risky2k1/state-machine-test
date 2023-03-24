@@ -34,13 +34,13 @@
                         <option value="{{ $state }}">{{ $state }}</option>
                     @endforeach
                 </select>
-                <button type="submit">Save</button>
+                <button type="submit" class="btn btn-secondary">Save</button>
             </form>
         </section>
         <section>
             <h2>Order Status Change History</h2>
             <table>
-                <thead>
+                <thead >
                 <tr>
                     <th>Status</th>
                     <th>Date</th>
